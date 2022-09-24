@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent implements OnInit {
-  aim = 'your perfect banking partner';
+  // aim = 'your perfect banking partner';
   aim2 = 'password';
   acnt = 'enter your account number';
   accNum = '';
@@ -44,10 +44,31 @@ export class LoginPageComponent implements OnInit {
 
   ngOnInit(): void {}
   // alert('hello')
-  login() {
+  // login(ac: any, ps: any) {
+  //   // alert(`hello`);
+  //   let acnum = this.accNum;
+  //   let password = this.pass;
+  //   let userDetails = this.userDetails;
+  //   // let userPassword=userDetails.
+  //   if (acnum in userDetails) {
+  //     if (password == userDetails[acnum]['password']) {
+  //       alert(`correct`);
+  //     } else {
+  //       alert(`incorrect password`);
+  //     }
+  //     // if (password === userDetails[a]) {
+  //     // }
+  //   } else {
+  //     alert(`account number not exist`);
+  //   }
+  // }
+
+  login(ac: any, ps: any) {
     // alert(`hello`);
-    let acnum = this.accNum;
-    let password = this.pass;
+    console.log(ac.value, ps.value);
+
+    let acnum = ac.value;
+    let password = ps.value;
     let userDetails = this.userDetails;
     // let userPassword=userDetails.
     if (acnum in userDetails) {

@@ -1,5 +1,5 @@
 <div>
-  <h1>{{ aim }}</h1>
+  <!-- <h1>{{ aim }}</h1> -->
 </div>
 <section class="vh-100 gradient-custom">
   <div class="container py-5 h-100">
@@ -15,7 +15,7 @@
                   type="email"
                   id="typeEmailX"
                   class="form-control form-control-lg"
-                  (change)="accChange($event)"
+                  #accno
                   [placeholder]="acnt"
                 />
                 <label class="form-label" for="typeEmailX">AccountNumber</label>
@@ -26,7 +26,7 @@
                   type="password"
                   id="typePasswordX"
                   [placeholder]="aim2"
-                  (change)="accPass($event)"
+                  #pass
                   class="form-control form-control-lg"
                 />
                 <label class="form-label" for="typePasswordX">Password</label>
@@ -37,7 +37,7 @@
               </p>
 
               <button
-                (click)="login()"
+                (click)="login(accno, pass)"
                 class="btn btn-outline-light btn-lg px-5"
                 type="submit"
               >
