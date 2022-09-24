@@ -1,0 +1,15 @@
+html to ts 
+view (html) to component(ts)
+
+1: one by binding 
+1.1: componet to view 
+1.1.1 string interpolation 
+string interpolation using by {{}}
+1.1.2 property binding [property]="value"
+
+1.2 view to component
+1.2.1 event binding (event name)="functionname()
+1.2.2 event binding using $event (event name)="functionname($event)"
+
+
+2 two way binding
